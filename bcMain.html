@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>bc</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<!-- CSS von Startseite und Spiel werden hier verlinkt -->
+	<link rel="stylesheet" type="text/css" href="pageMain.css" />
+	<link rel="stylesheet" type="text/css" href="pageGame.css" />
+	<link rel="stylesheet" type="text/css" href="pageRegister.css" />
+	<!-- JQuery Code und JavaScript werden verlinkt -->
+	<script src="gameJQ.js"></script>
+	</head>
+
+	<body>
+	
+	<div id="object1"></div>
+	<div id="object2"></div>
+	
+		<!-- Wird einmal geladen, UserName und Mail werden gespeichert -->
+		<div data-role="page" id="register" display: none>
+			<p>
+			Bitte suche dir einen Usernamen aus und gib optional deine Email Adresse ein, <br>
+			falls du immer von den neuesten Upates und Pflanzen hören willst. <br>
+				
+				<label for="vname">Username: <br>
+					<input id="username" name="username"> <br> 
+				</label>
+		 
+				<label for="vname">Email (optional): <br>
+					<input id="userMail" name="userMail"> <br> <br>
+				</label>
+				
+				<button type="button">Starten</button>
+			</p>
+		</div>
+		
+		<!-- Das Startmenü, wenn das Spiel geladen hat. Ist immer erste Seite! -->
+		<div data-role="page" id="main">
+			<p>
+			Das ist das Startmenü
+			</p>
+		</div>
+				
+		<!-- Einstellungen -->
+		<div data-role="page" id="settings">
+
+		</div>
+				
+	</body>
+
+</html>
